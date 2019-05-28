@@ -6,7 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace InstructorExercisesMVC.Models.ViewModels
+namespace StudentExercisesMVC.Models.ViewModels
 {
     public class InstructorEditViewModel
     {
