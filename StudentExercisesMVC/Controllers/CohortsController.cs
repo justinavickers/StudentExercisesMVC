@@ -103,7 +103,6 @@ namespace StudentExercisesMVC.Controllers
         // GET: Cohort/Create
         public ActionResult Create()
         {
-            InstructorCreateViewModel model = new InstructorCreateViewModel(Connection);
             using (SqlConnection conn = Connection)
             {
                 conn.Open();
@@ -129,7 +128,7 @@ namespace StudentExercisesMVC.Controllers
 
                     reader.Close();
 
-                    return View(model);
+                    return View(cohort);
                 }
             }
         }
